@@ -1,6 +1,9 @@
 # Análise de variações de temperatura média mensal para diferentes países
 
-**Autores:** Daniella.
+**Autores:** 
+
+1. Daniella.
+1. Leo
 
 ## Abstract
 
