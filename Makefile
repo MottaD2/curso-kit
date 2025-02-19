@@ -3,11 +3,11 @@
 # alvo: pre-requisitos1 pre-requisito2
 #   comandos que usam os pre-requisitos para gerar o alvo
 
-all: resultados/variacao_temperatura.csv resultados/numero_de_dados.txt
+all: resultados/variacao_temperatura.csv resultados/numero_de_dados.txt figuras/variacao_temperatura.png
 # 	Nenhum comando, o "all" é um alvo fictício
 
 clean:
-	rm -r -f -v dados resultados
+	rm -r -f -v dados resultados figuras
 
 resultados/numero_de_dados.txt: dados/temperature-data.zip
 	mkdir -p resultados
@@ -22,4 +22,4 @@ resultados/variacao_temperatura.csv:  dados/temperature-data.zip code/variacao_t
 
 figuras/variacao_temperatura.png: code/plota_dados.py resultados/variacao_temperatura.csv
 	mkdir -p figuras
-	python code/plota_dados.py resultados/variacao_temperatura.csv > figuras/variacao_temperatura.png
+	python code/plota_dados.py resultados/variacao_temperatura.csv figuras/variacao_temperatura.png
