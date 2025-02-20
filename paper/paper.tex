@@ -7,6 +7,7 @@
 
 \usepackage[brazil]{babel}
 \usepackage{graphicx}
+\usepackage[round,authoryear,sort]{natbib}
 
 % Corpo
 % Onde a gente escreve o texto
@@ -26,7 +27,11 @@
 Isso vai ser minha Introdução.
 Outra frase da Introdução
 
-Esse já será outro parágrafo
+Esse já será outro parágrafo.
+
+Trabalho anteriores bem legais fizeram coisas parecidas.
+\citep{Hansen2010}.
+Isso foi analidaso primerio por \citet{Hansen2010}
 
 \section{Metodologia}
 \label{sec:metodos}
@@ -55,7 +60,7 @@ Analisamos os dados de 225 países. São muitos para listar aqui. Confie em mim.
 
 \begin{figure} [!tb]
     \centering
-    \includegraphics[width=0.5\columnwidth]{../figuras/variacao_temperatura.png}
+    \includegraphics{../figuras/variacao_temperatura.png}
     \caption{
         Variação de temperatura média mensal dos cinco últimos anos.
         a) Países com as cinco maiores variações de temperatura.
@@ -65,5 +70,9 @@ Analisamos os dados de 225 países. São muitos para listar aqui. Confie em mim.
 
 \end{figure}
 Os resultados da análise de variação de temperatura estão na figura \ref{fig:variacao}.
+
+\bibliographystyle{apalike}
+\bibliography{referencias.bib}
+
 
 \end{document}
