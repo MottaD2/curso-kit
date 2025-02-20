@@ -9,12 +9,15 @@
 \usepackage{graphicx}
 \usepackage[round,authoryear,sort]{natbib}
 
+\newcommand{\Title}{Análise de variação de temperatura dos últimos cinco anos}
+
+\input{paises.tex}
 % Corpo
 % Onde a gente escreve o texto
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 
-\title{Análise de variação de temperatura dos últimos cinco anos}
+\title{\Title}
 \author{Daniella Motta}
 
 \maketitle
@@ -31,7 +34,7 @@ Esse já será outro parágrafo.
 
 Trabalho anteriores bem legais fizeram coisas parecidas.
 \citep{Hansen2010}.
-Isso foi analidaso primerio por \citet{Hansen2010}
+Isso foi analisado primerio por \citet{Hansen2010}
 
 \section{Metodologia}
 \label{sec:metodos}
@@ -56,7 +59,8 @@ Isso está descrito na seção \ref{sec:metodos}.
 
 \section{Resultados}
 
-Analisamos os dados de 225 países. São muitos para listar aqui. Confie em mim.
+Analisamos os dados de 225 países. 
+Os países analisados foram \Paises.
 
 \begin{figure} [!tb]
     \centering
