@@ -5,12 +5,47 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \documentclass{article}
 
+\usepackage[brazil]{babel}
 
 % Corpo
 % Onde a gente escreve o texto
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 
-Meu artigo bem legal.
+\title{Análise de variação de temperatura dos últimos cinco anos}
+\author{Daniella Motta}
+
+\maketitle
+\begin{abstract}
+    Meu artigo bem legal.
+\end{abstract}
+
+
+\section{Introdução}
+Isso vai ser minha Introdução.
+Outra frase da Introdução
+
+Esse já será outro parágrafo
+
+\section{Metodologia}
+\label{sec:metodos}
+
+Aqui eu vou descrever tudo que eu fiz.
+Ajustamos uma reta aos cinco últimos anod dos dados
+de temperatura média mensal para cada país.
+Assim calculamos a taxa de variação da temperatura recente.
+
+A equação da reta é
+
+\begin{equation}
+T(t) = a t + b,
+\label{eq:reta}
+\end{equation}
+
+\noindent
+onde  $T$ é a temperatura, $t$ é o tempo, $a$ é o coeficiente angular e $b$ é o coeficiente linear.
+
+Utilizamos a \ref{eq:reta} em um código Python para fazer o ajuste da reta com o método dos mínimos quadrados.
+Isso está descrito na seção \ref{sec:metodos}.
 
 \end{document}
